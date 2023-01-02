@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   addNewTrick = (trick) => {
-    this.setState({tricks: {...this.state.tricks, trick}})
+    this.setState({tricks: [...this.state.tricks, trick]})
   }
 
   componentDidMount() {
@@ -25,6 +25,7 @@ class App extends Component {
   }
 
   render() {
+    console.log("THIS.STATE=====", this.state.tricks)
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
