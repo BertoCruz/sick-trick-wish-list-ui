@@ -1,6 +1,7 @@
 import { Component } from "react";
 import "./App.css";
 import TrickList from "../TricksList/TrickList";
+import Form from "../Form/Form";
 import { fetchTricks } from "../../api-calls";
 
 class App extends Component {
@@ -9,6 +10,10 @@ class App extends Component {
     this.state = {
       tricks: [],
     }
+  }
+
+  addNewTrick = (trick) => {
+    this.setState({tricks: {...this.state.tricks, trick}})
   }
 
   componentDidMount() {
@@ -23,6 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Sick Trick Wish List</h1>
+        <Form addNewTrick={this.addNewTrick}/>
         <TrickList tricks={this.state.tricks}/>
       </div>
     );
