@@ -1,9 +1,11 @@
 import React from 'react'
 
-function TrickCard() {
-    
+function TrickCard({id, stance, name, obstacle, tutorial}) {
+
   return (
-    <div>TrickCard</div>
+    <div className='trick-card'>
+        TrickCard
+    </div>
   )
 }
 

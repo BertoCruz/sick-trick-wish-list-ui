@@ -5,9 +5,9 @@ export default class Form extends Component {
     super(props);
     this.state = {
       stance: "",
-      trick: "",
+      name: "",
       obstacle: "",
-      tutorialLink: "",
+      tutorial: "",
     };
   }
 

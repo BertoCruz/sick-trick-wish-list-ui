@@ -1,4 +1,8 @@
 .App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 
@@ -19,4 +23,7 @@ h1 {
   margin-bottom: 240px;
 }
 
+.trick-list-container {
+  
+}
 
